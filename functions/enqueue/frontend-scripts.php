@@ -16,11 +16,11 @@ if (!function_exists('multiplica_frontend_scripts')) :
 
         wp_enqueue_script('multiplica_frontend_scripts', get_template_directory_uri() . '/dist/bundle.js', array(), multiplica_theme_version(), TRUE);
 
-		wp_enqueue_script('multiplica_navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+		wp_enqueue_script('multiplica_navigation', get_template_directory_uri() . '/js/navigation.js', array(), _MULTIPLICA_VERSION, true);
 
 		// REMOVE COMMENT TO ACTIVE
         // if (is_page('example-slug')){
-        //     wp_enqueue_script('multiplica_example', get_template_directory_uri() . '/js/example.js', array(), _S_VERSION, true);
+        //     wp_enqueue_script('multiplica_example', get_template_directory_uri() . '/js/example.js', array(), _MULTIPLICA_VERSION, true);
         //     $wp_js_vars = array(
         //         'ajax_url' => admin_url('admin-ajax.php'),
         //     );

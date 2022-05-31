@@ -15,7 +15,7 @@ if (!function_exists('multiplica_frontend_styles')) :
 
 		wp_enqueue_style('multiplica_frontend_styles', get_template_directory_uri() . '/dist/theme.css', NULL, multiplica_theme_version(), 'all');
 
-		wp_enqueue_style('multiplica_frontend_style', get_stylesheet_uri(), array(), _S_VERSION);
+		wp_enqueue_style('multiplica_frontend_style', get_stylesheet_uri(), array(), _MULTIPLICA_VERSION);
 
 	}
 
