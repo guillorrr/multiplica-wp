@@ -14,6 +14,8 @@ if (!function_exists('multiplica_frontend_scripts')) :
 		// 	wp_enqueue_script('select2');
 		// }
 
+        wp_enqueue_script('multiplica_frontend_scripts', get_template_directory_uri() . '/dist/bundle.js', array(), multiplica_theme_version(), TRUE);
+
 		wp_enqueue_script('multiplica_navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
 		// REMOVE COMMENT TO ACTIVE
